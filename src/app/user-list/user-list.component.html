@@ -5,4 +5,6 @@
     <h3>{{ user.first_name }} {{ user.last_name }}</h3>
   </div>
   <!-- Add pagination controls here -->
+  <mat-spinner *ngIf="loading" class="spinner"></mat-spinner>
 </div>
+
