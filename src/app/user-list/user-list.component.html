@@ -1,0 +1,8 @@
+<app-header></app-header>
+<div class="user-list">
+  <div *ngFor="let user of users" class="user-card" (click)="viewUser(user.id)">
+    <img [src]="user.avatar" alt="User Avatar">
+    <h3>{{ user.first_name }} {{ user.last_name }}</h3>
+  </div>
+  <!-- Add pagination controls here -->
+</div>
